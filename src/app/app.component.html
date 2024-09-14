@@ -1,9 +1,18 @@
-<h1>String calculator</h1>
+<div class="container">
+  <h1>String Calculator</h1>
 
+  <form class="calculator-form">
+    <label for="numbers">Input:</label>
+    <input
+      id="numbers"
+      [(ngModel)]="inputString"
+      type="text"
+      required
+      name="numbers"
+    />
+  </form>
 
-<form >
-  <label >Input</label>
-  <input  [(ngModel)]="inputString"  type="text" required  name="numbers" >
-</form>
-<button (click)="calculateSum()">Calculate Sum</button>
-<h3>Result: {{ result }}</h3>
+  <button (click)="calculateSum()" class="calculate-button">Calculate Sum</button>
+
+  <h3 class="result">Result: {{ result }}</h3>
+</div>
