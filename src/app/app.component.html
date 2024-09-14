@@ -1,0 +1,9 @@
+<h1>String calculator</h1>
+
+
+<form >
+  <label >Input</label>
+  <input  [(ngModel)]="inputString"  type="text" required  name="numbers" >
+</form>
+<button (click)="calculateSum()">Calculate Sum</button>
+<h3>Result: {{ result }}</h3>
